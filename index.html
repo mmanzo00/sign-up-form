@@ -16,13 +16,57 @@
         </div>
         <div class="right">
             <div id="up">
-
+                <p>
+                    This is not a real online service! You know you need something like this in your life to
+                    help you realize your deepest dreams. <br>
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
             </div>
             <div id="middle">
-
+                <h3>Let's do this!<h3>
+                <form id="sign-up">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" id="name" >
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">LAST NAME</label>
+                            <input type="text" name="surname" id="surname" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" >
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="pass" id="password" 
+                            pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}"
+                            title="Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-pass" id="confirm-pass" 
+                            pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}"
+                            title="Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character">
+                        </div>
+                    </div>
+                </form>
             </div>
             <div id="down">
-
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? <a>Log in</a></p>
             </div>
         </div>
     </div>

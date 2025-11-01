@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url(./fonts/Norse-Bold.otf) format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'MyFont', sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -21,7 +32,7 @@ body{
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     height: 15%;
-    margin-top: 40%;
+    margin-top: 30%;
     padding: 10px;
     justify-content: center;
 }
@@ -40,11 +51,94 @@ body{
     flex-direction: column;
 }
 
-
 .right > div {
-    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
 }
+
+#up{
+    display: flex;
+    height: 34.3%;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 350px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    background-color: rgb(242, 242, 242);
+}
+
+
+#middle{
+    display: flex;
+    height: 32.3%;
+    flex-direction: column;
+    padding-left: 40px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.form-row{
+    display: flex;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #111111;
+    margin-right: 60px;
+}
+
+.form-row{
+    margin-bottom: 20px;
+}
+
+input{
+    width: 220px;
+    height: 20px;
+    border-radius: 2px;
+    border: 2px solid #E5E7EB;
+}
+
+#password:invalid:not(:focus) {
+    border: 2px solid red;
+    outline: none;
+}
+
+#confirm-pass:invalid:not(:focus) {
+    border: 2px solid red;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
+
+#down{
+    display: flex;
+    flex-direction: column;
+    height: 33.3%;
+    background-color: rgb(242, 242, 242);
+    padding-left: 40px;
+}
+
+button{
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+a{
+    color: #596D48;
+    font-weight: bold;
+}
+
